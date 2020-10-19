@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+import mailgo, { MailgoConfig } from "mailgo";
+
+const mailgoConfig: MailgoConfig = {
+  dark: true,
+};
+
 function App() {
+  useEffect(() => {
+    mailgo(mailgoConfig);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,11 +22,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="mailto:matteo@manzinello.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          A mailto link
         </a>
       </header>
     </div>
