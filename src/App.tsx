@@ -6,6 +6,8 @@ import mailgo, { MailgoConfig } from "mailgo";
 
 const mailgoConfig: MailgoConfig = {
   dark: true,
+  lang: "it",
+  showFooter: false,
 };
 
 function App() {
