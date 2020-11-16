@@ -30,6 +30,15 @@ function App() {
         >
           A mailto link
         </a>
+        <br />
+        <a
+          className="App-link"
+          href="tel:123456789"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          A tel link
+        </a>
       </header>
     </div>
   );
