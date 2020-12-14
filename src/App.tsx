@@ -22,7 +22,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="mailto:matteo@manzinello.dev"
+          href="mailto:info@mailgo.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
